@@ -13,7 +13,7 @@ If you are participating in the any Codeforce contest, It automatically starts t
 # implemented so far
 - get website address and match whether it's codeforce. 
 - if it is, then get pathname and match whether it's contest
-- if it is, then get contest status by getting class name 'contest-status-phase'.
+- if it is, then get contest status by getting class name 'contest-state-phase'.
 
 # TODO
 - so many things
