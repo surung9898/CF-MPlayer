@@ -1,4 +1,6 @@
-//TODO: Icon
+<p align = "center">
+  <img src = "https://github.com/surung9898/CF-MPlayer/blob/master/icon.png" weight=300 height=300 title="CF-MPlayer Icon"></img>
+</p>
 
 # CF-MPlayer
 Automatically play the music when you are participating the CF-contest
