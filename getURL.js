@@ -1,4 +1,5 @@
 var url = window.location.href;
+var getList = require('./getList').getList
 
 if (url == "https://codeforces.com/") {
     var pathname = window.location.pathname;
@@ -8,7 +9,7 @@ if (url == "https://codeforces.com/") {
         var status = document.getElementsByClassName("contest-state-phase")[0].innerHTML;
 
         if (status == "Contest is running") {
-            //TODO
+            await getList();
         }
     }
 }

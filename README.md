@@ -6,7 +6,7 @@ Automatically play the music when you are participating the CF-contest
 # main function
 If you are participating in the any Codeforce contest, It automatically starts the music along with the option you set.
 
-<Option>
+-Option-
 1. music you set before.
 2. randomly selected.
 
