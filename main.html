@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>CF-MPlayer</title>
-        <link href="onOff.css" rel="stylesheet" type="text/css"></link>
+        <script src="/js/getURL.js"></script>
+        <link href="/css/onOff.css" rel="stylesheet" type="text/css"></link>
     </head>
 
     <body>
@@ -13,8 +14,11 @@
 
         <section>
             <article>
+                <div id="isCodeforces"></div>
+            </article>
+            <article>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="onOffButton" checked="getStart()">
                     <span class = "slider round"></span>
                 </label>
             </article>

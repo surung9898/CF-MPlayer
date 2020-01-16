@@ -3,10 +3,10 @@
    
     "name": "CF-MPlayer",
     "description": "Automatically play musics before set",
-    "version": "0.1",
+    "version": "0.11",
    
     "browser_action": {
-      "default_icon": "icon.png",
+      "default_icon": "/image/icon.png",
       "default_popup": "main.html"
     },
     "permissions": [
