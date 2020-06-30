@@ -1,12 +1,14 @@
 function loadImg(isTrue) {
     var img = document.createElement("img");
-    img.height = 150;
-    img.width = 150;
+    img.height = 200;
+    img.width = 200;
 
-    if (isTrue) {
+    if (isTrue == 1) {
         img.src = "/image/Codeforces.jpg";
+        document.getElementById("pictureText").innerHTML = "*Click to start listening!*";
     } else {
         img.src = "/image/notCodeforces.jpg";
+        document.getElementById("pictureText").innerHTML ="No Codeforces, No Music! X("
     }
 
     var src = document.getElementById("isCodeforces");
@@ -43,7 +45,7 @@ if (url == "https://codeforces.com/") {
         var status = document.getElementsByClassName("contest-state-phase")[0].innerHTML;
 
         if (status == "Contest is running") {
-            await getList();
+            await getStart();
         }
     }
 }
