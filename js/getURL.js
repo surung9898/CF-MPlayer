@@ -1,4 +1,5 @@
 function loadImg(isTrue) {
+    var src = document.getElementById("isCodeforces");
     var img = document.createElement("img");
     img.height = 200;
     img.width = 200;
@@ -11,7 +12,6 @@ function loadImg(isTrue) {
         document.getElementById("pictureText").innerHTML ="No Codeforces, No Music! X("
     }
 
-    var src = document.getElementById("isCodeforces");
     src.appendChild(img);
 }
 

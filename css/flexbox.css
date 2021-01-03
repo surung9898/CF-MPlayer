@@ -1,0 +1,13 @@
+.parent {
+    margin: 1px auto;
+}
+
+.icon {
+    float: left;
+}
+
+.first {
+    margin-left : 10%;
+    margin-top : -5%;
+    float: left;
+}
