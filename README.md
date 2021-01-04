@@ -13,9 +13,9 @@ If you are participating in the any Codeforce contest, It automatically starts t
 2. randomly selected.
 
 # implemented so far
-- get website address and match whether it's codeforce. 
-- if it is, then get pathname and match whether it's contest
-- if it is, then get contest status by getting class name 'contest-state-phase'.
+- Different cute Niko picture is showing whether your tab's current site is codeforcese or not
+- if you check the slider then Niko picture is changed
 
 # TODO
-- so many things
+- If slider event is listened then get song list before User registered from the list file
+- Add 'add songs to list' button
