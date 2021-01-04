@@ -9,7 +9,7 @@ function loadImg(isTrue) {
         document.getElementById("pictureText").innerHTML = "*Click to start listening!*";
     } else {
         img.src = "/image/notCodeforces.jpg";
-        document.getElementById("pictureText").innerHTML ="No Codeforces, No Music! X("
+        document.getElementById("pictureText").innerHTML = "No Codeforces, No Music! X("
     }
 
     src.appendChild(img);

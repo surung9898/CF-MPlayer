@@ -3,5 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     link.addEventListener('click', function() {
         get_start(link.checked);
+        get_music_list(link.checked);
     });
 });
