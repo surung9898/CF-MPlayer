@@ -11,3 +11,7 @@
     margin-top : -5%;
     float: left;
 }
+
+.flex-container {
+    display: flex;
+}

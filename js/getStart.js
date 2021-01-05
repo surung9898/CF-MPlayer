@@ -28,13 +28,18 @@ function get_url() {
 
 async function get_start(is_checked) {
     if (is_checked) {
+        var aaa = document.getElementById("isCodeforces");
+
+        if (aaa.lastChild)
+            aaa.removeChild(aaa.lastChild);
+
         img.src = "/image/codeforcesStart.png";
         document.getElementById("pictureText").innerHTML = "Now Start!";
 
-        var src = document.getElementById("isCodeforces");
-        var parsrc = src.parentNode;
+        var src = document.getElementById("bodybody");
+        src.replaceChild(img, src.firstChild);
 
-        parsrc.replaceChild(img, src);
+        document.getElementById("song_list_button").style.display="block";
     }
     else {
         var cf_flag = await get_url();
@@ -50,24 +55,34 @@ async function get_start(is_checked) {
 
         document.getElementById("pictureText").innerHTML = txt;
 
-        var src = document.getElementById("isCodeforces");
-        var parsrc = src.parentNode;
+        var src = document.getElementById("bodybody");
+        src.replaceChild(img, src.firstChild);
 
-        parsrc.replaceChild(img, src);
+        document.getElementById("song_list_button").style.display="none";
     }
 }
 
 function get_music_list(is_checked) {
     if (is_checked) {
         var xhr = new XMLHttpRequest();
+        var lists;
+
         xhr.open('GET', chrome.extension.getURL("/data/song_list.txt"), true);
 
-        xhr.onreadystatechange = function()
-        {
+        xhr.onreadystatechange = function() {
             if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
-                alert(xhr.responseText);
+                lists = xhr.responseText.split('\n');
         };
 
         xhr.send();
+
+        if (lists.length) {
+            for (var i = 0; i < lists.length; ++i) {
+                
+            }
+        }
+        else {
+
+        }
     }
 }
