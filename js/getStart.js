@@ -61,28 +61,3 @@ async function get_start(is_checked) {
         document.getElementById("song_list_button").style.display="none";
     }
 }
-
-function get_music_list(is_checked) {
-    if (is_checked) {
-        var xhr = new XMLHttpRequest();
-        var lists;
-
-        xhr.open('GET', chrome.extension.getURL("/data/song_list.txt"), true);
-
-        xhr.onreadystatechange = function() {
-            if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
-                lists = xhr.responseText.split('\n');
-        };
-
-        xhr.send();
-
-        if (lists.length) {
-            for (var i = 0; i < lists.length; ++i) {
-                
-            }
-        }
-        else {
-
-        }
-    }
-}
