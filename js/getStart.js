@@ -33,12 +33,39 @@ async function get_start(is_checked) {
         if (aaa.lastChild)
             aaa.removeChild(aaa.lastChild);
 
-        img.src = "/image/codeforcesStart.png";
-        document.getElementById("pictureText").innerHTML = "Now Start!";
+        var tbl = document.createElement('table');
+        tbl.setAttribute("id", "song_table");
 
+        tbl.style.width = '200px';
+        tbl.style.border = '1px solid black';
+
+        for (var i = 0; i < 5; ++i) {
+            var tr = tbl.insertRow();
+
+            for (var j = 0; j < 2; ++j) {
+                var td = tr.insertCell();
+
+                td.style.border = '1px solid black';
+                td.style.height = '32px';
+                td.style.fontSize = '20px';
+
+                if (j == 0) {
+                    txt = "song name";
+                    td.style.width = '120px'
+                }
+                else {
+                    txt = '🤔';
+                    td.style.width = '20px';
+                }
+
+                td.appendChild(document. createTextNode(txt));
+            }
+        }
+        
         var src = document.getElementById("bodybody");
-        src.replaceChild(img, src.firstChild);
+        src.replaceChild(tbl, src.firstChild);
 
+        document.getElementById("pictureText").innerHTML = "Now Start!";
         document.getElementById("song_list_button").style.display="block";
     }
     else {

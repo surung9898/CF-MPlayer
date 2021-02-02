@@ -21,5 +21,27 @@ function get_music_list(is_checked) {
 }
 
 function set_music_list() {
-    alert("wow!");
+    tbl = document.getElementById("song_table");
+
+    var tr = tbl.insertRow();
+    var txt;
+
+    for (var j = 0; j < 2; ++j) {
+        var td = tr.insertCell();
+
+        td.style.border = '1px solid black';
+        td.style.height = '32px';
+        td.style.fontSize = '20px';
+
+        if (j == 0) {
+            txt = "song name";
+            td.style.width = '120px'
+        }
+        else {
+            txt = '🤔';
+            td.style.width = '20px';
+        }
+
+        td.appendChild(document. createTextNode(txt));
+    }        
 }

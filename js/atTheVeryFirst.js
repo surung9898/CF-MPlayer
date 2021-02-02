@@ -1,15 +1,20 @@
 function loadImg(isTrue) {
     var src = document.getElementById("isCodeforces");
     var img = document.createElement("img");
+
     img.height = 200;
     img.width = 200;
 
     if (isTrue == 1) {
-        img.src = "/image/Codeforces.jpg";
+        img.src = "/image/codeforces.jpg";
         document.getElementById("pictureText").innerHTML = "*Click to start listening!*";
+
+        document.getElementById('link').disabled = false;
     } else {
         img.src = "/image/notCodeforces.jpg";
         document.getElementById("pictureText").innerHTML = "No Codeforces, No Music! X("
+
+        document.getElementById('link').disabled = true;
     }
 
     src.appendChild(img);
