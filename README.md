@@ -14,8 +14,10 @@ If you are participating in the any Codeforce contest, It automatically starts t
 
 # implemented so far
 - Different cute Niko picture is showing whether your tab's current site is codeforcese or not
-- if you check the slider then Niko picture is changed
+- if you check the slider then Niko picture is changed to table
+- Add 'add songs to list' button
 
 # TODO
-- If slider event is listened then get song list before User registered from the list file
-- Add 'add songs to list' button
+- If slider event is listened then get song list was registered by the User from the list file
+- Add 'remove' button to each table row
+- get youtube video from API
